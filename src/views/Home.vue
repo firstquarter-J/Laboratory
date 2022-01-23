@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <img class="bgImage" src="../assets/cosmic.jpg" />
+    <img
+      class="bgImage"
+      src="../assets/cosmic.jpg"
+    />
     <p>{{ welcomeText }}</p>
     <p>
       <span class="red">난</span>
@@ -12,20 +15,24 @@
     </p>
     <!-- <HelloWorld msg="난장판 실험실" /> -->
     <HelloWorld />
+    <Weather />
     <Clock />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-import Clock from "@/components/Clock.vue"; // @ is an alias to /src
+import HelloWorld from "../components/HelloWorld.vue"; // @ is an alias to /src
+import Clock from "../components/Clock.vue"; // @ is an alias to /src
+// import Weather from "@/components/Weather.vue";
+import Weather from "../components/Weather.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     HelloWorld,
     Clock,
+    Weather,
   },
   data() {
     return {
