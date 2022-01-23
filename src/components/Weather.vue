@@ -1,6 +1,7 @@
 <template>
   <div class="weather">
     <h1>{{ getWeather }}</h1>
+    <h1>{{ weather }}</h1>
   </div>
 </template>
 
