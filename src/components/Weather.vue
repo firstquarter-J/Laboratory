@@ -14,11 +14,6 @@ export default Vue.extend({
     return {
       API_KEY: "761047b11b9ee4554c537e1d7f91fdf4",
       COORDS: "coords",
-      // getCurrentPositionOptions: {
-      //   enableHighAccuracy: true,
-      //   timeout: 5000,
-      //   maximumAge: 0,
-      // },
       weather: "여기는 날씨",
     };
   },
