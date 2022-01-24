@@ -1,7 +1,7 @@
 <template>
   <div class="weather">
-    <h1>{{ getWeather }}</h1>
-    <h1>{{ weather }}</h1>
+    <h1>{{ temperature }}</h1>
+    <h1>{{ place }}</h1>
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default Vue.extend({
     return {
       API_KEY: "761047b11b9ee4554c537e1d7f91fdf4",
       COORDS: "coords",
-      weather: "여기는 날씨",
+      place: "위치!",
+      temperature: "온도!",
     };
   },
   mounted() {
@@ -72,19 +73,11 @@ export default Vue.extend({
         .then(function (response) {
           return response.json();
         })
-        .then(function (json) {
+        .then((json) => {
           const temperature = json.main.temp;
           const place = json.name;
-          const weather = `${temperature}℃
-        ${place}
-        `;
-          //   this.weather = `${temperature}℃
-          // ${place}
-          // `;
-          console.log(weather);
-          return `${temperature}℃
-        ${place}
-        `;
+          this.temperature = `${temperature}℃`;
+          this.place = `${place}`;
         });
     },
   },
