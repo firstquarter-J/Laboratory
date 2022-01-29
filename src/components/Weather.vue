@@ -21,11 +21,6 @@ export default Vue.extend({
     mounted() {
         this.loadCoords();
     },
-    computed: {
-        handleGeoError() {
-            return console.log(`Can't Access Geo Location!!!`);
-        },
-    },
     methods: {
         askForCoords() {
             const getCurrentPositionOptions = {
@@ -47,6 +42,9 @@ export default Vue.extend({
                 longitude,
             };
             this.saveCoords(coordsObj);
+        },
+        handleGeoError() {
+            console.log(`Can't Access Geo Location!!!`);
         },
         saveCoords(coordsObj: Record<string, string>) {
             localStorage.setItem(this.COORDS, JSON.stringify(coordsObj));
