@@ -67,12 +67,16 @@ Y88b  d88P Y88..88P Y88b 888 Y8b.     888 d88P 888     888 Y88b.    888 "88b
 </script>
 
 <style>
+body {
+  /* background-image: url(/assets/cosmic.jpg); */
+  line-height: 2;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: gray;
 }
 
 #nav {
@@ -81,10 +85,10 @@ Y88b  d88P Y88..88P Y88b 888 Y8b.     888 d88P 888     888 Y88b.    888 "88b
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: mediumturquoise;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: pink;
 }
 </style>
