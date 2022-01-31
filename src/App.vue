@@ -20,7 +20,7 @@ export default Vue.extend({
   name: "App",
   mounted() {
     console.log(
-      `%c안%c녕 %c난 %c프%c론%c트%c야`,
+      "%c안%c녕 %c난 %c프%c론%c트%c야",
       "color: red; font-style: italic; padding: 4px; border-radius: 4px; font-size: 88px",
       "color: orange; font-style: italic; padding: 4px; border-radius: 4px; font-size: 88px",
       "color: yellow; font-style: italic; padding: 4px; border-radius: 4px; font-size: 88px",
