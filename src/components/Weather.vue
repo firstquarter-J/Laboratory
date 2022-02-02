@@ -44,7 +44,7 @@ export default Vue.extend({
       this.saveCoords(coordsObj);
     },
     handleGeoError() {
-      console.log(`Can't Access Geo Location!!!`);
+      console.log("Can't Access Geo Location!!!");
     },
     saveCoords(coordsObj: Record<string, string>) {
       localStorage.setItem(this.COORDS, JSON.stringify(coordsObj));
