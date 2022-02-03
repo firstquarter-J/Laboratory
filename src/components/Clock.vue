@@ -16,9 +16,7 @@ export default Vue.extend({
       time: "",
     };
   },
-  // props: {},
   mounted() {
-    this.setDate();
     this.nowYearMonthDay();
     this.nowTime();
     setInterval(this.nowTime.bind(this), 1000);
